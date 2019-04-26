@@ -32,7 +32,6 @@ ydf = pd.DataFrame(y)
 print('ydf head()---------------------------')
 print(ydf.head())
 
-
 clf = AdaBoostClassifier(n_estimators=100, random_state=0)
 clf.fit(X, y)
 print clf.feature_importances_
@@ -40,7 +39,6 @@ print clf.feature_importances_
 print clf.predict([[0, 0, 0, 0]])
 
 print clf.score(X, y)
-
 
 dfclf = AdaBoostClassifier(n_estimators=100, random_state=0)
 dfclf.fit(Xdf, ydf)
